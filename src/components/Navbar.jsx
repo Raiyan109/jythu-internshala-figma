@@ -60,9 +60,9 @@ const Navbar = () => {
 
                     {open &&
                         (
-                            <div className='absolute -left-28 h-screen bg-teal-100 w-screen transition ease-out duration-100 transform'>
+                            <div className='absolute -right-5 md:-left-28 h-screen bg-teal-100 w-screen transition ease-out duration-100 transform'>
                                 {/* hidden lg: */}
-                                <ul className="space-y-5 flex flex-col items-center absolute left-96 top-52 text-2xl">
+                                <ul className="space-y-5 flex flex-col items-center absolute left-44 md:left-96 top-52 text-2xl">
                                     <li className="flex">
                                         <Link to='/' className='flex items-center px-4 md:px-1 -mb-1 border-b-2 border-transparent'>Home</Link>
                                     </li>
@@ -83,7 +83,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                                 {/* hidden lg: */}
-                                <div className="flex items-center absolute flex-shrink-0 top-[550px] left-[380px] gap-3 border border-teal-500 p-2 rounded-full">
+                                <div className="flex items-center absolute flex-shrink-0 top-[550px] left-[170px] md:left-[380px] gap-3 border border-teal-500 p-2 rounded-full">
                                     <img src={cart} alt="" />
                                     <img src={search} alt="" />
                                     {/* <button className="self-center px-8 py-3 rounded">Sign in</button> */}
